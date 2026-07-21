@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color:orange;
+}
+h3 {
+  color: beige;
+}
+
+/* This is for all the attacking buttons.*/
+#Attack-Bank button{
+  position: fixed;
+  padding: 40px 50px;
+  font-size: 25px;
+  background-color: orange;
+}
+
+#Attack-Bank button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 221, 30);
+}
+
+#Magic-Button{
+  bottom: 175px;
+  left: 200px;
+}
+
+#Mace-Button{
+  bottom: 175px;
+  left: 600px;
+}
+#Rapier-Button{
+  bottom: 25px;
+  left: 200px;
+}
+#Sword-Button{
+  bottom: 25px;
+  left: 600px;
+}
+
+/*This section is for the information sections*/
+#Player-Info {
+  position: fixed;
+  top: 30px;
+  left: 90px;
+}
+
+#Monster-Info {
+  position: fixed;
+  top: 30px;
+  left: 700px;
+}
+
+#Help-Button {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#Help-Button button:hover{
+  background-color: beige;
+}
+/*This section is for the animations*/
+#Attack-Images{
+  position: fixed;
+  top: 300px;
+  left: 300px;
+  opacity: 1;
+  position: absolute;
+}
+
+.animate {
+ animation: Attack 2s linear ;
+}
+
+@keyframes Attack {
+  0% { transform: translateX(0px); opacity: 1; }
+  50% { transform: translateX(150px); opacity: 1; }
+  99% {opacity: 1;}
+  100% { transform: translateX(350px); opacity: 1; }
+}
+
+#Monster-Order {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
