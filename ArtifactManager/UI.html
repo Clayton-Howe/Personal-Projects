@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<link rel = "stylesheet" href = "style.css">
+
+<title>Artifact Manager</title>
+
+<body>
+  <h1>Artifact Manager</h1>
+  <h2>Enter Your Artifact!</h2>
+  <form id = "Item-Submission">
+    <div class="inputs">
+      <label for = "Item-Name">Item Name:</label>
+      <input type = "text" id = "Item-Name" name = "Item-Name" required size = "20" maxlength = "23">
+   
+      <h2>Artifact Type</h2>
+      <input type = "radio" id = "Armour" name = "Item-Type" value = "Armour" required>
+      <label for = "Item-Type">Armour</label>
+      <input type = "radio" id = "Weapon" name = "Item-Type" value = "Weapon">
+      <label for = "Item-Type">Weapon</label>
+      <input type = "radio" id = "Potion" name = "Item-Type" value = "Potion">
+      <label for = "Item-Type">Potion</label> 
+
+      <h2>Rarity</h2>
+      <input type = "radio" id = "Legendary" name = "Item-Rarity" value = "Legendary" required>
+      <label for = "Item-Rarity">Legendary</label>
+      <input type = "radio" id = "Epic" name = "Item-Rarity" value = "Epic">
+      <label for = "Item-Rarity">Epic</label>
+      <input type = "radio" id = "Rare" name = "Item-Rarity" value = "Rare">
+      <label for = "Item-Rarity">Rare</label> 
+      <input type = "radio" id = "Uncommon" name = "Item-Rarity" value = "Uncommon">
+      <label for = "Item-Rarity">Uncommon</label>
+      <input type = "radio" id = "Common" name = "Item-Rarity" value = "Common">
+      <label for = "Item-Rarity">Common</label>
+
+      <h2>Level Requirement</h2>
+      <label for = "Level-Requirement">(Use Arrows)</label>
+      <input type = "number" id = "Level-Requirement" name = "Level-Requirement" max="9" min="0">
+      <button type="button" onclick="addItem()">Submit!</button>
+    </div>
+  </form>
+  <br>
+  <div class = "Enter-Delete">
+    <button onclick="search()">Search for item</button><button onclick="remove()">Delete item</button><br>
+    <input type="text" id ="Item-Search" placeholder="Search or Delete" name = "Item-Search" maxlength="23">
+  </div>
+
+  <div id = "Artifacts">
+    <h2>Your Vault</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Level</th>
+        <th>Rarity</th>
+        <th>Type</th>
+        <th>Hash</th>
+      </tr>
+    </table>
+  </div>
+
+<script src = "Manager.js"></script>
+
+</body>
+
+
+

@@ -1,0 +1,33 @@
+body {
+  background-color: darkred;
+}
+h1 {
+  color: beige;
+  text-align: center;
+}
+h2 {
+  color: beige;
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+label{
+  color: beige;
+}
+.inputs{
+  text-align: center;
+}
+td{
+  text-align: center;
+}
+button{
+  border-radius: 10px;
+}
+.Enter-Delete{
+  text-align: center;
+}
