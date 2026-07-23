@@ -1,20 +1,14 @@
 import './App.css'
+import Home from './pages/Home'
 
 function App() {
   return (
     <>
-    <Text />
-    <Text />
+      <Home />
     </>
   );
 }
 
-function Text() {
-  return (
-    <div>
-      <p>Wonker</p>
-    </div>
-  );
-}
 
-export default App
+
+export default App;
