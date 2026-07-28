@@ -1,0 +1,1 @@
+This project is my first solo development project. The idea was to familiarize myself with react and its quirks, in addition to this I used the "Movie database" API to pull the list of movies.
